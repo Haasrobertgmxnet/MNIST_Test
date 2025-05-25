@@ -1,7 +1,7 @@
 #pragma once
 
 #include <chrono>
-#include <print>
+#include <iostream>
 
 namespace Helper {
     class Timer
@@ -29,9 +29,7 @@ namespace Helper {
         {
             if (outputAtExit)
             {
-                std::print(
-                    "Time difference needed for program execution: {} Milliseconds.\n",
-                    getDuration().count());
+                std::cout << "Time difference needed for program execution: " << getDuration().count() << " Milliseconds.\n";
             }
         }
 
